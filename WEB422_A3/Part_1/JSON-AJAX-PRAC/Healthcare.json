@@ -1,0 +1,102 @@
+[
+    {
+        "LEGAL_NAME": "Tommy Hill",
+        "COUNTRY": "Canada",
+        "PROVINCE": "Ontario",
+        "CITY": "Toronto",
+        "STREET": "222 Kings",
+        "POSTAL_CODE": "M5G 8J9",
+        "PHONE_NUMBER": "123 456 7890",
+        "OHIP_NUMBER": "7263-968-352-UP"
+    },
+    {
+        "LEGAL_NAME": "Tim Burton",
+        "COUNTRY": "Canada",
+        "PROVINCE": "Ontario",
+        "CITY": "Pickering",
+        "STREET": "456 Lilly Rd",
+        "POSTAL_CODE": "G8F J8A",
+        "PHONE_NUMBER": "333 444 5678",
+        "OHIP_NUMBER": "7263-968-992-UP"
+    },
+    {
+        "LEGAL_NAME": "Sally Park",
+        "COUNTRY": "Canada",
+        "PROVINCE": "Ontario",
+        "CITY": "Ajax",
+        "STREET": "90 Vermont St",
+        "POSTAL_CODE": "Q4T Y8U",
+        "PHONE_NUMBER": "876 543 2100",
+        "OHIP_NUMBER": "7623-968-352-UP"
+    },
+    {
+        "LEGAL_NAME": "Billy Bob",
+        "COUNTRY": "Canada",
+        "PROVINCE": "Ontario",
+        "CITY": "London",
+        "STREET": "564 Circle Cres",
+        "POSTAL_CODE": "G8F J8T",
+        "PHONE_NUMBER": "123 456 7888",
+        "OHIP_NUMBER": "7255-968-352-UP"
+    },
+    {
+        "LEGAL_NAME": "Katherine Tals",
+        "COUNTRY": "Canada",
+        "PROVINCE": "Ontario",
+        "CITY": "Pickering",
+        "STREET": "789 Bermondsy Road",
+        "POSTAL_CODE": "M5G 8O9",
+        "PHONE_NUMBER": "333 444 6777",
+        "OHIP_NUMBER": "7263-968-352-DR"
+    },
+    {
+        "LEGAL_NAME": "Jenna Joal",
+        "COUNTRY": "Canada",
+        "PROVINCE": "Ontario",
+        "CITY": "Toronto",
+        "STREET": "12 Rose Avenue",
+        "POSTAL_CODE": "M5G 8U1",
+        "PHONE_NUMBER": "876 543 2111",
+        "OHIP_NUMBER": "7263-968-352-TP"
+    },
+    {
+        "LEGAL_NAME": "Marc Molia",
+        "COUNTRY": "Canada",
+        "PROVINCE": "Ontario",
+        "CITY": "Kingston",
+        "STREET": "432 Kenneth Road",
+        "POSTAL_CODE": "M5G 2P9",
+        "PHONE_NUMBER": "178 143 2100",
+        "OHIP_NUMBER": "7263-968-352-OO"
+    },
+    {
+        "LEGAL_NAME": "Amy Tiner",
+        "COUNTRY": "Canada",
+        "PROVINCE": "Ontario",
+        "CITY": "London",
+        "STREET": "916 Points Blv",
+        "POSTAL_CODE": "Q4T Z9U",
+        "PHONE_NUMBER": "178 444 2100",
+        "OHIP_NUMBER": "7263-968-352-WW"
+    },
+    {
+        "LEGAL_NAME": "Mamy Tinel",
+        "COUNTRY": "Canada",
+        "PROVINCE": "Ontario",
+        "CITY": "Toronto",
+        "STREET": "111 Kooloo Avenue",
+        "POSTAL_CODE": "G8F Y8Y",
+        "PHONE_NUMBER": "123 123 7890",
+        "OHIP_NUMBER": "1163-968-352-TT"
+    },
+    {
+        "LEGAL_NAME": "Sammy Sole",
+        "COUNTRY": "Canada",
+        "PROVINCE": "Ontario",
+        "CITY": "Kingston",
+        "STREET": "96 Parkview Rd",
+        "POSTAL_CODE": "Q4Q Y8U",
+        "PHONE_NUMBER": "333 333 3777",
+        "OHIP_NUMBER": "1263-888-352-PP"
+    }
+]
