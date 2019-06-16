@@ -2,3 +2,15 @@
     max-height: 300px;
     overflow-y: auto;
 }
+.ms-parent{
+    width: 100% !important;
+}
+.ms-drop input[type="checkbox"]{
+    margin-right: 8px;
+}
+.ms-drop input[type="radio"]{
+    margin-right: 8px;
+}
+head{
+    background-color: aqua;
+}

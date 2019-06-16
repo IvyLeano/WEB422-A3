@@ -1,0 +1,28 @@
+node_modules
+
+# docs site
+_gh_pages
+docs/assets/css/multiple-select.css
+docs/assets/css/multiple-select.css.map
+docs/assets/js/multiple-select.js
+
+# use scss instead
+src/multiple-select.css
+src/multiple-select.css.map
+
+# Common IDE files
+nbproject
+.~lock.*
+package-lock.json
+*.lock
+.buildpath
+.idea
+.project
+.settings
+*.iml
+
+# OS X Finder internal system files
+.DS_Store
+.localized
+Icon
+.vscode

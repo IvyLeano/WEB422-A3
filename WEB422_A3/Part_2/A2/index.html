@@ -5,55 +5,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ivy Leano - WEB422</title>
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./CSS/bootstrap-header-table.css" />
-  <link rel="stylesheet" type="text/css" href="./CSS/main.css">
 
-  <title>Ivy Leano - WEB422</title>
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Multiple Select -->
+  <link rel="stylesheet" href="./multiple-select-master/dist/multiple-select.css">
+
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" href="./CSS/main.css">
+
 </head>
 
 <body>
+
+  <!-- Main Content -->
   <!-- Latest compiled and minified jQuery 3.2.1 JavaScript -->
-
-
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Assignment 2 - Employee Details</a>
+        <a class="navbar-brand" href="#">Assignment 3 - Team Details</a>
       </div>
   </nav>
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <input type="text" class="form-control" placeholder="Search for Employees" id="employee-search">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="container bootstrap-header-table">
-          <div class="row header-row"> 
-            <div>
-              <div class="col-md-4 header-column" >First Name</div>
-              <div class="col-md-4 header-column">Last Name</div>
-              <div class="col-md-4 header-column">Position</div>
+      <div style="display:none" , data-bind="visible:true, foreach: teams">
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <strong data-bind="text: TeamName"></strong>
+              <button class="btn-primary btnxs pull-right" data-bind="click: saveTeam">Save</button>
+            </div>
+            <div class="panel-body">
+              <h5>Team Lead</h5>
+              <select class="single" data-bind=
+              "value:TeamLead, 
+              options:$parent.employees, 
+              optionsText:function(item) { return ko.unwrap(item.FirstName) + ' ' + ko.unwrap(item.LastName) }, 
+              optionsValue:function(item) { return item._id }"></select>
+              <h5>Team Members</h5>
+              <select class="single" multiple
+              data-bind=
+              "selectedOptions: Employees,
+              options: $parent.employees,
+              optionsText:  function(item) { return ko.unwrap(item.FirstName) + ' ' + ko.unwrap(item.LastName) },
+               optionsValue: function(item) { return item._id }"></select>
+              <h5>Projects</h5>
+              <select class="single" multiple data-bind=
+              "selectedOptions: Projects,
+              options: $parent.projects,
+              optionsText: function(item) { return item.ProjectName },
+              optionsValue: function(item) { return item._id }"></select>
             </div>
           </div>
-          <div class="row body-rows" id="employees-table"></div>
         </div>
       </div>
     </div>
   </div>
+
+
   <div class="modal fade" id="genericModal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -66,21 +84,26 @@
       </div>
     </div>
   </div>
-
+  <!-- Incude jQuery 3.2.1 -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-  <!-- Latest compiled and minified Bootstrap 3.3.7 JavaScript -->
+  <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="JS\main.js"></script>
 
-  <!-- <link rel = "stylesheet" type = "text/css" href = ".\CSS\main.css" /> -->
+  <!-- Include Knockout -->
+  <script src="./KO/knockout-3.4.2.js"></script>
 
-  <script src="./lib/lodash.min.js"></script>
-  <script src="./lib/moment.min.js"></script>
+  <!-- Include Knockout mapping -->
+  <script src="./KO/knockout.mapping-latest.js"></script>
 
+  <!-- Multiple Select -->
+  <script src="./multiple-select-master/dist/multiple-select.js"></script>
+
+  <!-- custom JavaScript -->
+  <script src="./JS/main.js"></script>
 </body>
 
 </html>
